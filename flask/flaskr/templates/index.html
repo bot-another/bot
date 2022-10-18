@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>请输入链接</h1>
+<form method="post" action="/">
+    <input name="url" id="url" value="{{ request.form['url'] }}" required>
+    <select name="clarity">
+        <option name="options" value="0">4K</option>
+        <option name="options" value="1">1080P60</option>
+        <option name="options" value="2">1080P+</option>
+        <option name="options" value="3">1080P</option>
+        <option name="options" value="4">720P60</option>
+        <option name="options" value="5">720P</option>
+        <option name="options" value="6">480P</option>
+    </select>
+    <input type="submit" name = "确认" value="确认">
+  </form>
+</body>
+</html>
