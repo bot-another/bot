@@ -1,0 +1,407 @@
+p,
+input,
+label,
+span,
+button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* #CCFFFF #99CCFF */
+html::-webkit-scrollbar {
+    width: 0 !important;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+
+body{
+    background: #ccccff52;
+}
+
+.mainFrame {
+    display: flex;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.topToolList {
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    background: linear-gradient(to right bottom,
+            rgba(221, 221, 221, 0.4),
+            rgba(252, 252, 252, 0.3),
+            rgba(250, 250, 250, 0.2));
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 2px 5px 0 rgba(42, 42, 43, 0.39);
+    width: 96%;
+    height: 50px;
+    margin-left: 2%;
+    margin-top: 1%;
+    border-radius: 15px;
+}
+
+.topToolList01 {
+    cursor: pointer;
+    display: none;
+    height: 100%;
+    width: 90px;
+    margin: auto;
+}
+
+.topToolList02 {
+    cursor: pointer;
+    height: 100%;
+    width: 90px;
+    margin: auto;
+}
+
+.topToolList03 {
+    cursor: pointer;
+    height: 100%;
+    width: 90px;
+    margin: auto;
+}
+
+.topToolListPicture {
+    text-align: center;
+}
+
+.longCardStyle {
+    position: absolute;
+    display: flex;
+    width: 72%;
+    top: 80px;
+    left: 1%;
+    margin: auto;
+    background: rgba(191, 197, 211, 0.4);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border-radius: 15px;
+    border-top: 1px solid rgba(203, 203, 214, 0.8);
+    border-left: 1px solid rgba(198, 198, 212, 0.8);
+    box-shadow: 0 2px 5px 0 rgba(42, 42, 43, 0.39);
+}
+
+.timeFlowStyle {
+    position: relative;
+    height: 98%;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow-y: hidden;
+}
+
+.rootNodeStyle {
+    display: flex;
+    height: 150px;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.coverContainerDiv {
+    position: relative;
+    width: 1%;
+    height: inherit;
+}
+
+.coverDiv {
+    position: relative;
+    z-index: 100;
+    width: 2000%;
+    height: 100%;
+}
+
+.dataDiv {
+    position: relative;
+    display: flex;
+    height: 100px;
+    width: 16%;
+    /* background: #ccdd; */
+    text-align: center;
+    align-items: center;
+    /* line-height: 70px; */
+}
+
+.time {
+    font-size: 1rem;
+    /* border: 2px solid white;
+    border-radius: 5px; */
+}
+
+.lineDivStyle {
+    position: relative;
+    display: inline-flex;
+    height: 150px;
+    width: 9%;
+    /* background: #eedd; */
+}
+
+.line1 {
+    height: 110%;
+    width: 10px;
+    background: rgb(120, 120, 120);
+}
+
+.line2 {
+    position: relative;
+    top: 49px;
+    width: 90%;
+    height: 2px;
+    background: rgb(120, 120, 120);
+}
+
+.dot {
+    position: relative;
+    top: 46px;
+    width: 7px;
+    height: 7px;
+    background: rgb(120, 120, 120);
+    border-radius: 10px;
+}
+
+.EventStyle {
+    display: block;
+    height: 150px;
+    width: 50%;
+    background: #ccccff67;
+    transition: width 0.5s, height 0.5s;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.detailInfoStyle {
+    display: none;
+}
+
+.InfoStyle {
+    display: flex;
+    padding-left: 20px;
+}
+
+.videoInfoStyle {
+    display: block;
+    text-align: center;
+    width: 40%;
+}
+
+.picInfoStyle {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 60%;
+}
+
+.deleteItemStyle {
+    display: block;
+    position: relative;
+    padding-right: 10%;
+}
+
+.deleteStyle {
+    position: relative;
+    float: right;
+    border: none;
+    margin-top: 20px;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.rootNodeStyle:hover {
+    height: auto;
+}
+
+.rootNodeStyle:hover>.EventStyle {
+    height: inherit;
+    width: 74%;
+}
+
+.rootNodeStyle:hover>.EventStyle>.detailInfoStyle {
+    display: block;
+}
+
+.rootNodeStyle:hover>.lineDivStyle {
+    height: inherit;
+}
+
+.integrateDivStyle {
+    display: block;
+    position: fixed;
+    top: 80px;
+    left: 74%;
+    width: 24%;
+    border-radius: 15px;
+    border-top: 1px solid rgba(203, 203, 214, 0.8);
+    border-left: 1px solid rgba(198, 198, 212, 0.8);
+    box-shadow: 0 2px 5px 0 rgba(42, 42, 43, 0.39);
+    /* background: #ff33; */
+}
+
+.innerDiv{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.previewDivStyle {
+    /* display: none; */
+    position: relative;
+    width: 100%;
+    /* background: #ff33; */
+
+}
+
+.toolDivStyle {
+    /* display: none; */
+    display: block;
+    position: relative;
+    width: 15%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.inputStyle {
+    padding-top: 20px;
+    width: 100%;
+}
+
+.group {
+    /* background: #ccdd; */
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.inputbar {
+    border: none;
+    height: 25px;
+    width: 94%;
+    margin-left: 2%;
+    background: rgba(206, 206, 203, 0.39);
+}
+
+.inputbar:focus {
+    outline: none;
+}
+
+.bar1 {
+    height: 0.11pt;
+    width: 96%;
+    margin-left: 2%;
+    background: black;
+}
+
+.bar2 {
+    height: 2px;
+    width: 0%;
+    margin: auto;
+    background: #5264AE;
+    transition: width 0.5s;
+}
+
+label {
+    pointer-events: none;
+    position: relative;
+    top: -23px;
+    width: 96%;
+    margin-left: 2%;
+    font-size: 16px;
+    color: black;
+    transition: font-size, 0.5s, color, 0.5s;
+}
+
+.inputbar:focus~.bar2 {
+    width: 95%;
+}
+label{
+    color: grey;
+}
+.inputbar:focus~label,
+.inputbar:valid~label {
+    font-size: 12px;
+    top: -48px;
+    color: #5264AE;
+}
+
+.group2 {
+    position: relative;
+    width: 100%;
+}
+
+.selectionStyle {
+    /* background: #5264AE;  */
+    display: none;
+    flex-shrink: 0;
+    margin: auto;
+    position: relative;
+    top: -20px;
+    width: 100%;
+    height: 140px;
+    overflow-y: scroll;
+}
+
+#clarity.inputbar:focus~.selectionStyle,
+.selectionStyle:hover {
+    /* background: #5264AE; */
+    display: block;
+}
+
+.selectionStyle::-webkit-scrollbar {
+    width: 0 !important;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+
+.itemStyle {
+    margin-left: 5%;
+    display: inline-flex;
+    width: 90%;
+    line-height: 30px;
+    text-align: center;
+}
+
+.itemStyle>p {
+    margin: auto;
+}
+
+.buttonStyle1 {
+    display: block;
+    margin: auto;
+    border: none;
+    font-size: 14px;
+    height: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.buttonStyle2 {
+    display: none;
+    margin: auto;
+    border: none;
+    font-size: 18px;
+    height: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.buttonStyle1 :hover,
+.buttonStyle2 :hover {
+    border-top: 0.5px solid rgba(203, 203, 214, 0.8);
+    border-left: 0.5px solid rgba(198, 198, 212, 0.8);
+    height: 20px;
+    box-shadow: 0 1px 2px 0 rgba(42, 42, 43, 0.39);
+}
+.loginStyle{
+    display: none;
+    margin: auto;
+    margin-bottom: 20px;
+}

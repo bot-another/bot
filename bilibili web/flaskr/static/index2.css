@@ -1,0 +1,60 @@
+.gridCardStyle{
+    position: absolute;
+    display: none;
+    flex-wrap: wrap;
+    width: 0%;
+    top: 80px;
+    left: 1%;
+    margin: auto;
+    background: rgba(191, 197, 211, 0.4);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border-radius: 15px;
+    border-top: 1px solid rgba(203, 203, 214, 0.8);
+    border-left: 1px solid rgba(198, 198, 212, 0.8);
+    box-shadow: 0 2px 5px 0 rgba(42, 42, 43, 0.39);
+}
+.oneSample {
+    display: flex;
+    width: 46%;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.329);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 0 rgba(42, 42, 43, 0.39);
+}
+.dataShowPic {
+    width: 100%;
+    display: block;
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+.dataShowText {
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+    padding-left: 8%;
+}
+.pngInfoStyle{
+    width: 100%;
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 92%;
+}
+.txtInfoStyle{
+    width: 100%;
+    position: relative;
+    width: 100%;
+}
+
+  
+  

@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html lang="zh" style="font-family: 'Times New Roman', Times, SimSun,serif;">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.01"/>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>视频链接爬虫下载</title>
+        <link rel="stylesheet" href="../static/index.css" type="text/css">
+        <link rel="stylesheet" href="../static/index2.css" type="text/css">
+        <link rel="shortcut icon" href="#" />
+        <script type="text/javascript" src="../static/index.js"></script>
+        <script type="text/javascript" src="../static/index2.js"></script>
+        <script type="text/javascript" src="../static/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <div id="background" class="bg">
+    </div>
+    <div id="MF" class="mainFraem">
+        <div id="tTL" class="topToolList">
+            <div id="tTL01" class="topToolList01">
+                <p class="topToolListPicture">
+                    <img src="../static/03.svg" width="20px" alt="picture" onclick="normalMode()">
+                </p>
+            </div>
+            <div id="tTL02" class="topToolList02">
+                <p class="topToolListPicture">
+                    <img src="../static/04.svg" width="20px" class="topToolListPicture" alt="picture" onclick="darkMode()">
+                </p>
+            </div>
+            <div id="tTL03" class="topToolList02">
+                <p class="topToolListPicture">
+                    <img src="../static/05.svg" width="20px" class="topToolListPicture" alt="picture" onclick="Grid()">
+                </p>
+            </div>
+            <div id="tTL04" class="topToolList01">
+                <p class="topToolListPicture">
+                    <img src="../static/07.svg" width="20px" class="topToolListPicture" alt="picture" onclick="List()">
+                </p>
+            </div>
+            <div id="tTL05" class="topToolList03">
+                <p class="topToolListPicture">
+                    <img src="../static/09.svg" width="20px" class="topToolListPicture" alt="picture" onclick="update()">
+                </p>
+            </div>
+            <div id="tTL06" class="topToolList03">
+                <p class="topToolListPicture">
+                    <img src="../static/08.svg" width="20px" class="topToolListPicture" alt="picture" onclick="download()">
+                </p>
+            </div>
+        </div>
+        <div id="longCard" class="longCardStyle">
+            <div id="covercontainer" class="coverContainerDiv">
+                <div id="cover" class="coverDiv"></div>
+            </div>
+            <div id="timeFlow" class="timeFlowStyle">
+                <div id="newNode0" class="rootNodeStyle">
+                    <div id="date0" class="dataDiv">
+                        <p id="timep0" class="text">2022年6月25日 10:07</p>
+                    </div>
+                    <div id="lineDiv0" class="lineDivStyle">
+                        <div id="1line0" class="line1"></div>
+                        <div id="2line0" class="line2"></div>
+                        <div id="dot0" class="dot"></div>
+                    </div>
+                    <div id="Event0" class="EventStyle">
+                        <p id="0p0" style="font-size: 23px; text-align: left;">&nbsp 视频名称：</p>
+                        <p id="1p0">一个全新的尝试</p>
+                        <div id="detailInfo0" class="detailInfoStyle">
+                            <div id="Info0" class="InfoStyle">
+                                <div id="videoInfo0" class="videoInfoStyle">
+                                    <p id="3p0" style="font-size: 20px; text-align: left;">信息如下:</p>
+                                    <p style="text-align: left;">视频链接：</p>
+                                    <p id="4p0" style="word-wrap: break-word">&nbsp;</p>
+                                    <p style="text-align: left;">清晰度：</p>
+                                    <p id="5p0">&nbsp;</p>
+                                </div>
+                                <div id="picInfo0" class="picInfoStyle">
+                                    <a id="transport0" href="https://www.bilibili.com">
+                                        <img id="img0" src="../static/01.svg" width="30%" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="deleteItem0" class="deleteItemStyle">
+                                <div id="deleteButton0" class="deleteStyle" onclick="deleteItem()">
+                                    <img id="1img0" width="30px" src="../static/02.svg" alt="垃圾桶矢量图">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="rootNode" class="rootNodeStyle">
+                    <div id="date" class="dataDiv">
+                        <p class="text">2022年6月25日 10:07</p>
+                    </div>
+                    <div id="lineDiv" class="lineDivStyle">
+                        <div id="line1" class="line1"></div>
+                        <div id="line2" class="line2"></div>
+                        <div id="dot" class="dot"></div>
+                    </div>
+                    <div id="Event" class="EventStyle">
+                        <p style="font-size: 23px; text-align: left;">&nbsp 从这里开始，添加你的下载流：</p>
+                        <p>一个全新的尝试</p>
+                        <div id="detailInfo" class="detailInfoStyle">
+                            <div id="Info" class="InfoStyle">
+                                <div id="videoInfo" class="videoInfoStyle">
+                                    <p>这是将展示一个封面</p>
+                                    <p>展示信息如下:</p>
+                                    <p>作者：未知 时间：未知</p>
+                                </div>
+                                <div id="picInfo" class="picInfoStyle">
+                                    <a id="transport" href="https://www.bilibili.com">
+                                        <img src="../static/01.svg" width="30%" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="deleteItem" class="deleteItemStyle" style="visibility: hidden;">
+                                <button id="deleteButton" class="deleteStyle">
+                                    <img src="../static/02.svg" width="30px" alt="垃圾桶矢量图">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="con">
+            <div id="gridCard" class="gridCardStyle">
+            <div id="oS0" class="oneSample">
+                <div id="dataShow0" class="dataShowText">
+                    <div id="pngInfo0" class="pngInfoStyle">
+                        <img id="10pic0" style="width: 100%;
+                                       height: 100%;
+                                       object-fit: cover;"
+                            src="../static/06.svg" alt="">
+                    </div>
+                    <div id="txtInfo0" class="txtInfoStyle">
+                        <p style="font-size: 20px; text-align: left; width: 100%;">&nbsp; 视频链接：</p>
+                        <p id="10p0" style="word-wrap: break-word; width:100%">www.bilibili.com</p>
+                        <p style="font-size: 20px; text-align: left;">&nbsp; 清晰度：</p>
+                        <p id="11p0">1080p&60FPS</p>
+                    </div>
+                </div>
+            </div>
+            <div id="oS01" class="oneSample">
+                <div class="dataShowPic">
+                    <img id="pic" src="../static/08.svg" class="svgPicture" width="30%" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div id="integrateDiv" class="integrateDivStyle">
+            <div class="innerDiv">
+                <div id="toolDiv" class="toolDivStyle">
+                    <div id="hiddenButton1" class="buttonStyle1" onclick="HiddenDiv()">
+                        <img src="../static/10.svg" style="height: 100%; object-fit: cover" alt="">
+                    </div>
+                    <div id="hiddenButton2" class="buttonStyle2" onclick="ShowDiv()">
+                        <img src="../static/11.svg" style="height: 100%; object-fit: cover" alt="">
+                    </div>
+                    <div id="button" class="buttonStyle1" onclick="addTimeFlow()">
+                        <img src="../static/12.svg" style="height: 100%; object-fit: cover" alt="">
+                    </div>
+                </div>
+                <div id="previewDiv" class="previewDivStyle">
+                    <div id="input" class="inputStyle">
+                        <div class="group">
+                            <label for="hrefInput"></label><input id="hrefInput" type="text" class="inputbar" required>
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <label>视频链接</label>
+                        </div>
+                        <div class="group2">
+                            <label for="clarity"></label><input id="clarity" type="text" class="inputbar" required>
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <label>视频清晰度</label>
+                            <div id="selections" class="selectionStyle">
+                                <div id="item1" class="itemStyle">
+                                    <p onclick="writeInput()">标清480p</p>
+                                    <p onclick="writeInput()">高清720p</p>
+                                </div>
+                                <div id="item2" class="itemStyle">
+                                    <p onclick="writeInput()">720p&60FPS</p>
+                                    <p onclick="writeInput()">超清1080p</p>
+                                </div>
+                                <div id="item3" class="itemStyle">
+                                    <p onclick="writeInput()">1080p&60FPS</p>
+                                    <p onclick="writeInput()">蓝光4K</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="recognise" class="innerDiv">
+                <div id="status" class="loginStyle">已加载cookies, 完成登录</div>
+                <div id="toolDiv2" class="toolDivStyle">
+                    <div id="login" class="buttonStyle1" onclick="login()">
+                        <img src="../static/14.svg" style="height: 100%; object-fit: cover" alt="">
+                    </div>
+                    <div id="register" class="buttonStyle1" onclick="register()">
+                        <img src="../static/13.svg" style="height: 100%; object-fit: cover" alt="">
+                    </div>
+                </div>
+                <div id="previewDiv2" class="previewDivStyle">
+                    <div id="loginAndRegister" class="inputStyle">
+                        <div class="group">
+                            <label for="username"></label><input id="username" type="text" class="inputbar" required>
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <label>账户</label>
+                        </div>
+                        <div class="group">
+                            <label for="password"></label><input id="password" type="password" class="inputbar" required>
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <label>密码</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
