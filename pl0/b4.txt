@@ -1,0 +1,8 @@
+var i := 2, j;
+begin
+for(;j = 0; i:=i+2)
+begin
+print(i);
+if i = 10 then j := 2;
+end
+end.

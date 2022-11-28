@@ -1,0 +1,20 @@
+var buf[4],i,j,k;
+procedure p;
+begin
+    longjmp(buf, 2);
+end;
+
+
+begin
+if (i := j := setjmp(buf)) = 0 then 
+    begin
+        print("first");
+        print(i, j);
+        call p;
+    end;
+else
+    begin
+        print("second");
+        print(i, j);
+    end;
+end.

@@ -1,0 +1,7 @@
+var i := 2, j;
+begin
+for(;;)
+begin
+print(i);
+end
+end.

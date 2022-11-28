@@ -1,0 +1,13 @@
+var a := 0, b := 0, c := 0, d[10], t[2];
+procedure f(var i[10], var j);
+begin
+j := j + 1;
+for(a := 0; a < 10; a := a + 1)print(j);
+end;
+begin
+for(a := 0; a < 10; a := a + 1)
+begin
+d[a] := a;
+end;
+f(d, 90);
+end.

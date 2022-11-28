@@ -1,0 +1,8 @@
+var i := 2, j;
+begin
+for(;; i:=i+2)
+begin
+print(i);
+if i = 100 then break;
+end
+end.
