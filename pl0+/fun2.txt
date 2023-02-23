@@ -1,0 +1,11 @@
+var a, b[10];
+procedure f(var i, var b[10]);
+    begin
+        if i = 0 then return 1;
+        else if i = 1 then return 1;
+        else return f(i - 1, b) + f(i - 2, b);
+    end;
+begin
+    for(a :(0, 25))print(f(a, b));
+    print(a);
+end.
