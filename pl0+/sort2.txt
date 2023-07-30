@@ -1,0 +1,28 @@
+var i := 0, j := 0, z := 2, q := 3, r := 5, kg[10],k[1];
+begin
+for (i : (0, 10))
+    scanf(kg[i]);
+k[0]:=0;
+i:=0;
+while (r:=1) = 1 do
+    begin
+        z := kg[i + 1];
+        j := i;
+        while j >= 0 do
+            begin
+                if z < kg[j] then
+                    begin
+                        kg[j + 1] := kg[j];
+                        j := j - 1;
+                    end;
+                else
+                    break;
+            end;
+        kg[j + 1] := z;
+        i := (i + 1) * 1;
+        if i = 9 then
+            break;
+    end;
+for (i:(0, 10))
+    print(kg[i]);
+end.

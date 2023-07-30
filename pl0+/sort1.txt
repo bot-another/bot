@@ -1,0 +1,28 @@
+var i := 20, j := 19, z := 2,q := 3, r := 5, kg[10] ,jmp := 1,a[1];
+//afsdafafasfasfasfasf
+begin/********/
+a[0] := 0;/*fgsgsdgs*
+fdhdfg*/
+for (var i :(0, 10, jmp))
+    scanf(kg[i + a[0]]);//dfsdf
+for (var i :(9, -1, 0-jmp))begin
+    for(var j :(0, i, 0 + jmp))
+    begin
+        if kg[j + jmp ] < kg[j] then
+        begin
+            z := kg[j];/*afasfas
+*/
+            kg[j] := kg[j + 1+ a[0]];
+            kg[j + 1] := z;
+        end;
+        if j > i then break;
+    end;
+    if i = 0 then break;
+    end;
+for (var j :(0, 10))
+    print(kg[j], i);
+print(i, j);
+end.
+/*********************/
+//gfdfhgjkhkdsgksj
+//

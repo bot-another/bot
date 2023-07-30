@@ -1,0 +1,18 @@
+var a := 97, b := 0, c := 0, d[10][10], t[2];
+procedure f(var t[10][10], var j);
+    begin
+        j := j + 1;
+        t[9][9] := t[9][9] - 1;
+        for(var a:(0, 10))
+            for(var i:(0, 10))
+                print(t[a][i], j);
+    end;
+begin
+for(var a:(0,10))
+    for(var i:(0, 10))
+    begin
+        d[a][i] := a + 20;
+    end;
+f(d, 90);
+print(a, d[9][9]);
+end.

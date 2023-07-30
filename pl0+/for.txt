@@ -1,0 +1,12 @@
+var i := 100;
+begin
+for(var i:(0, 10))
+begin
+    print(i);
+    for(var i: (10,20))
+    begin
+        print(i);
+    end;
+end;
+print(i);
+end.
